@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;}
+
+.column {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;}
+
+#bottom {
+  width: 100%;
+  margin-top: 60%;
+  float: right;
+  margin-bottom: 20px;}
+
+h3 {
+  font-weight: 500;}
+
+ol, ul {
+  font-weight: 300;}
+
+.books-title,
+.books-list {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 10px;}
+
+.books-list {
+  list-style-position: inside;}
+
+.learned-title,
+.learned-list {
+  border: 1px dashed red;
+  border-radius: 15px;
+  padding: 10px;}
+
+.learned-list {
+  list-style-type: upper-roman;
+  list-style-position: inside;}
+
+a:hover {
+  text-decoration: underline;}
