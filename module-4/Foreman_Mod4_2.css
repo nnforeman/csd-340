@@ -1,0 +1,20 @@
+#image-gallery {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);}
+
+h1 {
+  text-align: center;
+  color: rgba(20, 60, 120, 1);}
+
+h3 {
+  text-align: center;
+  color: rgba(0, 120, 90, 1);}
+
+figure {
+  text-align: center;}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+  color: rgba(90, 90, 90, 1);}
