@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Natasha Foreman
+  Assignment 9.3: JavaScript - Part 1
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSD 340 Web Development with HTML and CSS</title>
+
+  <script>
+    // Four JavaScript variables
+    var firstVariableValue = "courage";
+    var secondVariableValue = "adventure";
+    var thirdVariableValue = "freedom";
+    var fourthVariableValue = "sunrise";
+  </script>
+</head>
+
+<body>
+  <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+  <p>
+    It was early morning when the small group gathered at the edge of the forest. The path ahead was quiet, and the trees
+    swayed gently as if whispering about the unknown <span id="adventure">_________</span> that waited beyond the hill.
+  </p>
+
+  <p>
+    Maya gripped her backpack and smiled. She’d waited for this day with more <span id="courage">_________</span> than fear.
+    The long trail ahead didn’t scare her—it reminded her of how much she’d grown since her first hike years ago.
+  </p>
+
+  <p>
+    As the trail opened to a clearing, she stopped to watch the
+    <span id="sunrise">_________</span> pour light across the valley. It felt like a quiet promise that the journey would be worth it.
+    The air was calm, filled with the scent of pine and the soft hum of life waking up around her.
+  </p>
+
+  <p>
+    She took a deep breath, looked toward the horizon, and felt a sense of
+    <span id="freedom">_________</span> that she hadn’t known in a long time.
+    Sometimes the best moments are the ones that remind us to simply keep moving forward.
+  </p>
+
+  <p>
+    <button type="button" onclick="document.getElementById('adventure').innerHTML = secondVariableValue">adventure</button>
+    <button type="button" onclick="document.getElementById('courage').innerHTML = firstVariableValue">courage</button>
+    <button type="button" onclick="document.getElementById('sunrise').innerHTML = fourthVariableValue">sunrise</button>
+    <button type="button" onclick="document.getElementById('freedom').innerHTML = thirdVariableValue">freedom</button>
+  </p>
+</body>
+</html>
