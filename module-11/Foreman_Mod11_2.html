@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <p>Enter an item and use the buttons below to add, delete the last entry, or display the list.</p>
+
+    <input type="text" id="todoInput">
+    <br><br>
+
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastItem()">Delete Last Entry</button>
+    <button onclick="displayList()">Display</button>
+
+    <h3>To-Do List:</h3>
+    <div id="todoDisplay"></div>
+
+    <script>
+        // Array to hold items
+        var todoList = [];
+
+        // Add item function
+        function addItem() {
+            var item = document.getElementById("todoInput").value;
+
+            if (item === "") {
+                alert("Please enter something to add.");
+                return;
+            }
+
+            todoList.push(item);
+            alert("Added: " + item + " at position " + todoList.length);
+
+            document.getElementById("todoInput").value = "";
+        }
+
+        // Delete last entry function
+        function deleteLastItem() {
+            if (todoList.length === 0) {
+                alert("No items to delete.");
+                return;
+            }
+
+            var removed = todoList.pop();
+            alert("Deleted: " + removed);
+        }
+
+        // Display list function
+        function displayList() {
+            var display = "";
+
+            if (todoList.length === 0) {
+                display = "No items in the list.";
+            } else {
+                for (var i = 0; i < todoList.length; i++) {
+                    display += (i + 1) + ". " + todoList[i] + "<br>";
+                }
+            }
+
+            document.getElementById("todoDisplay").innerHTML = display;
+        }
+    </script>
+
+</body>
+</html>
